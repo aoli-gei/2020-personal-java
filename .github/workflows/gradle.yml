@@ -25,4 +25,4 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew shadowJar
     - name: Run
-      run: java -Xmx=6000m -jar -Dfile.encoding=utf-8 build/libs/GHAnalysis.jar
+      run: java -Xmx=6000m -Xms4000m  -jar -Dfile.encoding=utf-8 build/libs/GHAnalysis.jar
